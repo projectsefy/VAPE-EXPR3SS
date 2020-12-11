@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VAPE EXPR3SS | Personal Infomation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="MainScreen.css">
+    <link rel='icon' href='favcion.png' type='image/x-icon'/ >
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="description"content="Home | VAPE EXPR3SS - Home to Ireland's best E-liquids and equipment.">
+    <meta name="keywords" content="     ">
+    <meta name="Sefyboy" content="    ">
+</head>
+<body>
+    <div class="nav">
+        <img src="navlogo.png">
+            <a href="index">Home</a>
+            <a href="collection">Store</a>
+            <div class="dropdownMM">
+              <span>Members</span>
+              <div class="dropdown-contentMM"><br>
+                  <a href='/dashboard/'>Dashboard</a><br><br>
+                  <a href="/dashboard/personal-info">Personal Information</a><br><br>
+                  <a href='/dashboard/rewards-page'>Rewards</a><br><br>
+                  <a href='/dashboard/user-orders'>Orders</a>
+              </div>
+            </div>
+            <a href="contact">Contact</a>
+            <a href="wholesale">Wholesale</a>
+            <a href="about">About</a>
+            <a href="vapeguide">Vaping Guide</a>
+            <a href=""  class="fa">&#xf07a;</a>
+            <br>
+        </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+        <a href="index">Home</a>
+        <a href="collection">Store</a>
+        <a href="/dashboard/">Members</a>
+        <a href="wholesale">Wholesale</a>
+        <a href="contact">Contact</a>
+        <a href="about">About</a>
+        <a href="vapeguide"><b>Vaping Guide</b></a>
+    </div>
+    <span class="menubutton23" onclick="openNav()">&#9868;</span>
+    <div class="dashboardmenu">
+        <h3>Good evening, SefyTrev</h3>
+        <p>2:32 AM</p><br><br>
+        <hr style="margin-left:25%;margin-right:25%;width:50%">
+        <a href="dashboard"><p> Home </p></a>
+        <a href="orders"><p> Orders </p></a>
+        <a href="rewards"><p> Claim Rewards </p></a>
+        <a href="personalinformation"><p>- Personal Settings -</p></a>
+    </div>
+    <div class="dashboardmenuright">
+    <body>
+      <h2>Personal Information</h2>
+      <form>
+        <h5>Personal Information:</h5>
+        <label for='fname'>First Name:</label>
+        <input type='text' id="fname" name='fname' />
+        <br />
+        <label for='lname'>Last Name:</label>
+        <input type='text' id='lname' name='lname' />
+        <br />
+        <label for='lname'>Email:</label>
+        <input type='text' id="email" name='email' />
+        <br />
+        <h5>Shipping Information:</h5>
+        <label for='houseName'>House Name:</label>
+        <input type='text' id="houseName" name='houseName' />
+        <br />
+        <label for='town'>Town:</label>
+        <input type='text' id='town' name='town'  />
+        <br />
+        <label for='county'>County:</label>
+        <input type='text' id='county' name='county'  />
+        <br />
+        <label for='eircode'>Eircode:</label>
+        <input type='text' id='eircode' name='eircode' />
+        <br />
+        <br />
+        <input type='submit' value='Update' />
+      </form>
+      <!-- -->
+      <script src='../js/personalInformation.js'></script>
+</div>
+<script>
+function openNav(){
+    document.getElementById("mySidenav").style.width = "250px";
+}
+function closeNav(){
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>
+

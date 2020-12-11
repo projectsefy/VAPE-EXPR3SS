@@ -1,0 +1,1356 @@
+@font-face{
+    font-family:SL;src:url('Semplicita Light.otf');
+}
+@font-face{
+    font-family:SLM;src:url('Semplicita Medium.otf');
+}
+@font-face{
+    font-family:SL;src:url('SL.ttf');
+}
+@font-face{
+    font-family:SLI;src:url('Semplicita Light Italic.otf');
+}
+@font-face{
+    font-family:S-L;src:url('Segan-Light.ttf');
+}
+@font-face{
+    font-family:VEFont;src:url('VEFont.ttf');
+}
+body{
+    margin:0;
+    margin-top:70px;
+    padding:0;
+    font-family:SL;
+    background-color:#EDEDEE;
+}
+html{
+    margin:0;
+    padding:0;
+}
+* {
+    box-sizing: border-box;
+}
+a:active {
+    color: black;
+}
+a:link{
+    text-decoration:none;
+}
+::selection{
+    color: grey;background-color:#333;
+}
+.centerpage{
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;align-items:center;
+    justify-content: center;
+}
+.contents{
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:70px;
+}
+.FPbox{
+    height:100.1vh;
+    width:100%;
+    background-color:black;
+    overflow:hidden;
+}
+
+
+/*--------------Left Side Of the home page---------------------*/
+.FPbox div:nth-child(1){
+    width:35%;
+    height:100.1vh;
+    background-color:black;
+    float:left;
+    color:white;
+    padding:120px;
+    padding-top:280px;
+    font-size:50px;
+    font-family:VEFont;
+    border-top-right-radius:20px;
+}
+.FPbox div:nth-child(1) img{
+    position:absolute;
+    width:8%;
+    top:20px;
+    left:20px;
+    opacity:0.5;
+}
+.FPbox div:nth-child(1) p{
+    font-size:13px;
+    color:grey;
+    color:#e09b04;
+    font-family:SL;
+    margin-bottom:-60px;
+    padding:0;
+}
+.FPbox div:nth-child(1) p:nth-child(4){
+    font-size:20px;
+    color:lightgrey;
+    font-family:SL;
+    padding:0;
+    margin-top:-30px;
+}
+.FPbox div:nth-child(1) button{
+    font-size:16px;
+    color:black;
+    font-family:SL;
+    margin-top:100px;
+    padding:10px 40px;
+    background-color:#ffaf00;
+    border:1px solid #ffaf00;
+    border-radius:12px;
+    cursor:pointer;
+}
+.FPbox div:nth-child(1) button:hover{
+    background-color:#e09b04;
+    border:1px solid #e09b04;
+}
+
+
+
+
+/*--------------Right Side Of the home page---------------------*/
+.FPbox div:nth-child(2){
+    position:relative;
+    width:65%;
+    float:right;
+    height:100.1vh;
+}
+.FPbox div:nth-child(2) nav{
+    float:right;
+    margin-right:20px;
+    position:absolute;
+    top:50px;
+    right:50px;
+}
+.FPbox div:nth-child(2) a{
+    margin-right:20px;
+    color:black;
+}
+.FPbox div:nth-child(2) a:hover{
+    border-top:1px solid black;
+}
+.FPbox div:nth-child(2) h4:nth-child(3){
+    position:absolute;
+    bottom:60px;
+    left:20px;
+    font-size:30px;
+    color:black;
+    padding:0;
+    margin:0;
+    font-family:VEFont;
+}
+.FPbox div:nth-child(2) h4:nth-child(5){
+    position:absolute;
+    bottom:10px;
+    left:20px;
+    font-size:30px;
+    color:black;
+    padding:0;
+    margin:0;
+    font-family:VEFont;
+}
+.FPbox div:nth-child(2) p{
+    position:absolute;
+    bottom:45px;
+    left:15px;
+    font-size:15px;
+    color:black;
+    padding:0;
+    margin:0;
+    font-family:VEFont;
+}
+
+
+
+
+
+
+.SlideShow{
+    position:relative;
+    height:100vh;
+    width:100%;
+    background-color:black;
+}
+.SlideShow .FPbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color:#feae00;
+    animation: slideshow 12s linear 0s infinite;
+}
+.SlideShow .FPbox button{
+    z-index: 3;
+    animation: slideshow 12s linear 0s infinite;
+    background-color:#feae00;
+}
+
+
+
+
+.SlideShow .FPbox:nth-child(2){
+    z-index: 2;
+    animation-delay: 4s;
+    background-color:#044259;
+}
+.SlideShow .FPbox:nth-child(2) button{
+    z-index: 2;
+    animation-delay: 4s;
+    background-color:#044259;
+    border-color:#044259;
+}
+
+
+
+
+.SlideShow .FPbox:nth-child(3){
+    z-index: 1;
+    animation-delay: 8s;
+    background-color:#72b244;
+}
+.SlideShow .FPbox:nth-child(3) button{
+    z-index: 1;
+    animation-delay: 8s;
+    background-color:#72b244;
+    border-color:#72b244;
+}
+
+
+
+@keyframes slideshow{
+    25% { opacity: 1;}
+    33.33% { opacity: 0;}
+    91.66% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+/*--------------Box---------------------*/
+.MembersOnlyBox{
+    position:relative;
+    width:90%;
+    height:800px;
+    margin-left:auto;
+    margin-right:auto;
+    height:auto;
+    margin-top:100px;
+}
+.MembersOnlyBox div:nth-child(1){
+    width:70%;
+    padding:0;
+    margin-left:30%;
+    display:inline-block;
+}
+
+.MembersOnlyBox div:nth-child(1) img{
+    width:100%;
+    padding:0;
+    border-radius:12px;
+}
+
+.MembersOnlyBox div:nth-child(2){
+    width:29.6%;
+    height:100%;
+    text-align:center;
+    position:absolute;
+    padding:20px;
+    top:0;
+    border-radius: 6px;
+    margin-right:10px;
+    border:1px solid transparent;
+    border-left:1px solid grey;
+    border-right:1px solid grey;
+}
+
+.MembersOnlyBox div:nth-child(2) hr{
+    border:none;
+    border-top:1px dashed grey;
+}
+
+.MembersOnlyBox div:nth-child(2) button{
+    border:1px solid lightgrey;
+    background:lightgrey;
+    padding:5px;
+    font-size:15px;
+    width:150px;
+    font-family:SL;
+    border-radius:12px;
+    margin-top:100px;
+}
+/*--------------Box---------------------*/
+.infobox{
+    position:relative;
+    width:99%;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:100px;
+    overflow:hidden;
+}
+.infobox div:nth-child(1){
+    width:49.5%;
+    padding:0;
+    display:inline-block;
+    margin:0;
+    background-image:url('vapeguideimage.png');
+    background-size:100% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    text-align:center;
+}
+
+.infobox p:nth-child(-n+3){
+    background:lightgrey;
+    font-size:40px;
+    font-family:VEFont;
+    width:90%;
+    margin-top:2px;
+    margin-bottom:2px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.infobox p:nth-child(1){
+    margin-top:60px;
+}
+.infobox p:nth-child(4){
+    margin-top:200px;
+    background:lightgrey;
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.infobox button{
+    border:1px solid lightgrey;
+    background:lightgrey;
+    padding:5px;
+    font-size:15px;
+    width:150px;
+    margin-top:10px;
+    font-family:SL;
+    margin-bottom:40px;
+    border-radius:12px;
+}
+
+.infobox div:nth-child(2){
+    width:49.5%;
+    padding:0;
+    display:inline-block;
+    background-image:url('imgofpink.png');
+    background-size:100% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    text-align:center;
+    margin:0;
+    float:right;
+    margin-left:10px;
+    
+}
+
+
+
+.dashboardmenu{
+    padding-top:10px;
+    background-color:white;
+    width:20%;
+    height:88vh;
+    margin:0;
+    text-align:center;
+    border:1px solid lightgrey;
+    background-image: url('boxonebg4.png');
+    background-size:100%;
+    display:inline-block;
+}
+
+.dashboardmenu p:nth-child(n+3){
+font-size:17px;
+}
+.dashboardmenu a:nth-child(n+3){
+color:black;
+font-size:17px;
+}
+
+
+.dashboardmenu p:nth-child(n+1){
+transition:.2s;
+}
+.dashboardmenu p:nth-child(n+1):hover{
+font-weight:bold;
+transition:.5s
+}
+
+
+
+
+.dashboardmenuright{
+width:60%;
+display:inline-block;
+margin-left:10%;
+position:absolute;
+}
+
+
+.loadingbar{
+height:45px;
+width:100%;
+border:2px solid lightgrey;
+padding:3px;
+position:relative;
+background: rgb(2,93,39);
+background: linear-gradient(90deg, rgba(2,93,39,1) 0%, rgba(184,30,66,1) 80%, rgba(237,237,237,1) 80%, rgba(237,237,237,1) 100%);
+border-radius:12px;
+
+}
+
+.dashboardmenuright p:nth-child(1){
+float:left;
+color:white;
+}
+
+.dashboardmenuright p:nth-child(3){
+float:right;
+color:black;
+}
+
+.loadingbar img{
+float:right;
+width:70px;
+}
+
+.dashboardmenuright h3{
+margin-top:100px;
+}
+/*--------------Box---------------------*/
+.wegetwhatyouwant{
+    position:relative;
+    width:99%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    margin-left:10px;
+    margin-right:10px;
+    height:auto;
+    overflow:hidden;
+}
+.wegetwhatyouwant div:nth-child(1){
+    width:29.5%;
+    padding:0;
+    display:inline-block;
+    margin:0;
+    background-color:#123132;
+    text-align:center;
+    height:800px;
+}
+
+.wegetwhatyouwant p:nth-child(-n+3){
+    background:lightgrey;
+    font-size:40px;
+    font-family:VEFont;
+    width:90%;
+    margin-top:2px;
+    margin-bottom:2px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.wegetwhatyouwant p:nth-child(1){
+    margin-top:60px;
+}
+.wegetwhatyouwant p:nth-child(4){
+    margin-top:200px;
+    background:lightgrey;
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.wegetwhatyouwant button{
+    border:1px solid lightgrey;
+    background:lightgrey;
+    padding:5px;
+    font-size:15px;
+    width:150px;
+    margin-top:10px;
+    font-family:SL;
+    margin-bottom:40px;
+    border-radius:12px;
+}
+
+.wegetwhatyouwant div:nth-child(2){
+    width:69.5%;
+    padding:0;
+    height:800px;
+    display:inline-block;
+    background-image:url('wegetwhatyouwant.png');
+    background-size:100% 100%;
+    background-position:center;
+    background-repeat:no-repeat;
+    text-align:center;
+    margin:0;
+    float:right
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background:transparent
+}
+
+input[type=submit] {
+    border:1px solid lightgrey;
+    background:lightgrey;
+    padding:5px;
+    font-size:15px;
+    width:150px;
+    margin-top:10px;
+    font-family:SL;
+    margin-bottom:40px;
+    border-radius:12px;
+}
+
+.container10 input:nth-child(-n+7){
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background:transparent;
+  font-family:SL;
+}
+.container10 {
+  margin-top:100px;
+  border-radius: 6px;
+  padding: 20px;
+  width: 30%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  font-family:SL;
+}
+.container10 a{
+color:black
+}
+table {
+  
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.container {
+    margin-top:100px;
+    border-radius: 6px;
+    padding: 20px;
+    width: 75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.footer a{
+    color:white;
+}
+.footer{
+    width:100%;
+    height:600px;
+    background-image:url('new4.png');
+    background-size:60%;
+    background-repeat:no-repeat;
+    background-position:right;
+    background-color:black;
+    margin:0;
+    margin-top:150px;
+    padding:30px;
+    color:white;
+    position:relative;
+}
+.footer div:nth-child(n+1){
+    display:inline-block;
+    text-align:center;
+    margin-left:50px;
+    float:left;
+    height:500px;
+    width:200px;
+}
+.footer h3{
+    font-family:VEFont;
+    text-align:center;
+}
+.copyright{
+    color:grey;
+    position:absolute;
+    bottom:0;
+    left:10px;
+    font-size:12px;
+}
+.copyright a{
+    color:grey;
+}
+.menubutton23{
+    display:none;
+    cursor:pointer;
+    position:fixed;
+    top:2px;
+    right:5px;
+    padding:0;
+    font-size:40px;
+    color:white;
+    transform:rotate(90deg);
+    z-index:7;
+}
+.sidenav{
+    height:100%;
+    width: 0;
+    margin:0px;
+    position:fixed;
+    font-family:SL;
+    z-index:8;
+    top:0;
+    right:0;
+    background-color:black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    white-space: nowrap;
+    padding-top: 60px;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;color:#818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+    position:absolute;
+    top:0;
+    right:25px;
+    font-size:36px;
+    margin-left:50px;
+}
+.nav{
+    width:100%;
+    text-align:center;
+    height:54px;
+    background-color:black;
+    font-family:SL;
+    position:fixed;
+    z-index:6;
+    top:0;
+}
+.nav img{
+    width:75px;
+    position:absolute;
+    left:5%;
+}
+.nav a{
+    color:white;
+    margin:20px;
+}
+.nav span{
+    color:white;
+    margin:20px;
+}
+.vapeguidebox{
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+@media screen and (max-width:1300px){
+    .vapeguidebox{
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+.vapeguidebox div{
+    background-image:url('vapeguideimage.png');
+    width:100%;
+    height:500px;
+    background-color:black;
+    background-position:center;
+    background-size:auto 100%;
+    background-repeat:no-repeat;
+}
+
+.vapeguidebox div p{
+    background:lightgrey;
+    font-size:40px;
+    height:50px;
+    width:290px;
+    text-align:center;
+    margin:5px;
+    font-family:SL;
+    
+}
+
+.vapeguidebox div h6{
+    font-size:20px;
+    height:30px;
+    text-align:center;
+    margin:5px;
+    color:lightgray;
+    font-family:VEFont;
+    margin-left:400px;
+}
+
+figure{
+    width:23%;
+    display:inline-block;
+}
+.collectionspage{
+    background-image:url('LA2P3RP2.png');
+    background-size: 80%;
+    background-repeat:no-repeat;
+    background-position:bottom;
+    background-color:#0e393b;
+    height:70vh;
+}
+
+
+.collectionspage h3{
+    font-family:VEfont;
+    color:white;
+    background-color:black;
+    width:570px;
+    font-size:4vw;
+    float:right;
+}
+
+
+.ProductBox{
+    position:relative;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:50px;
+}
+
+
+
+.pbinfobox{
+    position:absolute;
+    top:200px;
+    right:0;
+    padding-left:20px;
+    width:49%;
+}
+
+
+.columnPT {
+    position:relative;
+    width: 80px;
+    padding: 7px;
+    padding-left:0;
+    float:left;
+}
+
+
+.columnPT img {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.columnPT img:hover {
+    opacity: 1;
+}
+
+
+.rowPT:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+.PTcontainer {
+    width:50%;
+    display:block;
+}
+
+.PTcontainer img{
+    width:100%;
+    display:block;
+}
+
+
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.Yourorders{
+    border:1px solid grey;
+    padding:10px;
+}
+.buynow{
+    border:1px solid black;
+    background:black;
+    color:white;
+    width:60%;
+    height:40px;
+    margin:20px;
+    margin-top:10%;
+    margin-left:0px;
+    float:right;
+}
+.dashboardmenuright button{
+    border:1px solid black;
+    background:black;
+    color:white;
+    padding:10px;
+    width:240px;
+    cursor:pointer;
+}
+
+.dashboardmenuright button:hover{
+    background-color:grey;
+    border:1px solid grey;
+}
+
+.addtochart{
+    border:1px solid black;
+    background:transparent;
+    width:60%;
+    float:right;
+    height:40px;
+    margin:20px;
+    margin-left:0px;
+    margin-top:0px;
+}
+
+@media screen and (max-width:1400px){
+    .ProductBox{
+        width:90%;
+    }
+}
+@media screen and (max-width:900px){
+    .pbinfobox{
+        width:100%;
+        position:relative;
+        top:10px;
+        padding-left:0px;
+    }
+    .PTcontainer {
+        width:100%;
+    }
+    .buynow, .addtochart{
+        width:100%;
+        float:none;
+    }
+}
+@media screen and (max-width:750px){
+    .collectionspage{
+        background-size: 100%;
+        height:50vh;
+    }
+    .collectionspage h3{
+        font-family:VEfont;
+        color:white;
+        background-color:black;
+        width:270px;
+        font-size:4vw;
+        float:right;
+    }
+    
+}
+@media screen and (max-width:520px){
+    .collectionspage{
+        background-size: 100%;
+        height:35vh;
+    }
+    .collectionspage h3{
+        font-family:VEfont;
+        color:white;
+        background-color:black;
+        width:270px;
+        font-size:4vw;
+        float:right;
+    }
+    
+}
+
+@media screen and (max-width:800px){
+ .dashboardmenuright{
+ width:70%;
+ margin-left:5%;
+ }
+ .dashboardmenu p:nth-child(n+1):hover{
+ font-weight:normal;
+ }
+}
+
+@media screen and (max-width:650px){
+
+
+.dashboardmenuright{
+width:90%;
+margin-left:5%;
+position:relative;
+}
+
+.dashboardmenu{
+ padding-top:10px;
+ height:130px;
+ width:100%;
+ margin:0;
+ text-align:center;
+ border:1px solid lightgrey;
+ background-image: url('boxonebg4.png');
+ background-size:100%;
+ display:block;
+}
+.dashboardmenu hr{
+ display:none;
+}
+.dashboardmenu p:nth-child(2){
+ margin-bottom:10px;
+ }
+
+.dashboardmenu p{
+ display:inline;
+ padding:10px;
+ font-size:12px
+ }
+
+
+.copyright{
+color:grey;
+position:absolute;
+bottom:0;
+left:10px;
+font-size:12px;
+}
+
+}
+
+.respnovesideBOX{
+    width:100%;
+    position:relative;
+}
+.FILTERLISTBOX{
+    float:left;
+    width:20%;
+    display:inline-block;
+}
+
+.PRODUCTBOX{
+    position:relative;
+    width:78%;
+    display:inline-block;
+    
+    padding:0;
+}
+
+.featuredproduct{
+    width:100%;
+    
+}
+.featuredproduct div{
+    width:20%;
+    border-radius: 6px;
+    overflow:hidden;
+    padding:0;
+    margin:0;
+    margin-top:40px;
+    margin-bottom:40px;
+    display:inline-block;
+    text-align:center;
+}
+.featuredproduct h4{
+    border-bottom:1px solid black;
+    padding:0;
+    margin-bottom:3px;
+}
+.featuredproduct button{
+    border:1px solid lightgrey;
+    background:lightgrey;
+    padding:5px;
+    font-size:15px;
+    width:150px;
+    font-family:SL;
+    border-radius:12px;
+}
+
+.active{
+    font-weight:bold
+}
+.active:before{
+    content:"- ";
+}
+
+.Fitlerlist a:hover {
+    font-weight:bold
+}
+
+
+
+.dropbtn, .dropbtn2, .dropbtn3, .dropbtn4, .dropbtn5 {
+    font-family:SL;
+    width:170px;
+    height:50px;
+    color: black;
+    font-size: 20px;
+    border:none;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+    background:none;
+    margin-bottom:10px;
+}
+
+
+.dropdown, .dropdown2, .dropdown3, .dropdown4, .dropdown5{
+    background:white;
+    z-index:2;
+    display:inline;
+    
+}
+
+.dropdown-content {
+    display: block;
+    padding-left:40px;
+    position: relative;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+}
+
+
+.dropdown-content2, .dropdown-content3, .dropdown-content4, .dropdown-content5{
+    display: none;
+    
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding:2px;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.show {display: none;}
+.show2, .show3, .show4, .show5 {display: block;}
+
+
+
+
+@media screen and (max-width:1100px){
+    
+    .featuredproduct div{
+        width:30%;
+    }
+}
+
+
+@media screen and (max-width:900px){
+    
+    .featuredproduct div{
+        width:35%;
+        margin-left:10%;
+        float:left;
+    }
+}
+
+@media screen and (max-width:700px){
+    
+    .featuredproduct div{
+        width:46%;
+        margin-left:2%;
+        display:inline-block;
+    }
+}
+
+
+@media screen and (max-width:650px){
+    .FILTERLISTBOX{
+        float:left;
+        width:96%;
+        display:inline-block;
+    }
+    .PRODUCTBOX{
+        width:100%;
+    }
+    .dropbtn, .dropbtn2, .dropbtn3, .dropbtn4, .dropbtn5 {
+        width:100%;
+        height:30px;
+        font-size: 14px;
+        text-align:right;
+        background-color:white;
+    }
+    
+    
+    .dropdown, .dropdown2, .dropdown3, .dropdown4, .dropdown5{
+        background-color:white;
+        z-index:2;
+        
+        
+    }
+    .dropdown-content a{
+        padding:8px;
+    }
+    .dropdown-content {
+        display: none;
+        padding-left:40px;
+        position: absolute;
+        width: 310px;
+        background-color:white;
+        overflow: auto;
+        z-index: 1;
+        border-right:1px solid black;
+        border-bottom:1px solid black;
+    }
+    
+    .show, .show2, .show3, .show4, .show5 {display: block;}
+    
+}
+
+
+.dropdownMM {
+    position: relative;
+    display: inline-block;
+    color:white;
+}
+
+.dropdown-contentMM {
+    display: none;
+    position: absolute;
+    color:white;
+    background:black;
+    left:-50px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdownMM:hover .dropdown-contentMM {
+    display: block;
+}
+
+
+@media screen and (max-width:960px){
+    .nav a, span{
+        display:none;
+    }
+    .menubutton23{
+        display:block;
+    }
+}
+
+/*--------------responsive---------------------*/
+@media screen and (max-width:1600px){
+    .FPbox h3{
+        font-size:50px;
+        margin-top:60px;
+    }
+    .footer div:nth-child(n+1){
+        height:280px;
+    }
+    .footer{
+        height:1000px;
+    }
+}
+@media screen and (max-width:1400px){
+    .FPbox img:nth-child(2){
+        margin-top:100px;
+    }
+}
+@media screen and (max-width:1440px){
+    .MembersOnlyBox div:nth-child(2) button{
+        margin-top:10px;
+    }
+    
+}
+
+@media screen and (max-width:1300px){
+    .FPbox h3{
+        font-size:40px;
+    }
+}
+@media screen and (max-width:1300px){
+    .vapeguidebox div h6{
+        margin-left:50px;
+    }
+}
+@media screen and (max-width:1200px){
+    .FPbox div:nth-child(1){
+        padding-left:30px;
+        padding-right:0px;
+    }
+    .MembersOnlyBox div:nth-child(1) img{
+        display:none;
+    }
+    .MembersOnlyBox div:nth-child(2){
+        width:100%;
+        text-align:center;
+        padding:20px;
+        position:relative;
+        border-radius: 6px;
+        margin-right:10px;
+        background-image:url('memberlogobg.png'), url('memberlogobg2.png') ;
+        background-size:100% auto, 100% 100%;
+        background-position:center, center;
+        background-repeat:no-repeat;
+    }
+    .infobox div:nth-child(1){
+        width:100%;
+        height:auto;
+        background-size:auto 100%vh;
+    }
+    .infobox div:nth-child(2){
+        width:100%;
+        margin-top:50px;
+        height:auto;
+        background-size:auto 100%vh;
+    }
+    .wegetwhatyouwant div:nth-child(2){
+        width:100%;
+        height:auto;
+        background-size:auto 100%vh;
+    }
+    .wegetwhatyouwant div:nth-child(1){
+        display:none;
+    }
+}
+@media screen and (max-width:1100px){
+    .FPbox div:nth-child(1){
+        width:100%;
+        height:40%;
+        border-top-right-radius:0px;
+        border-bottom-right-radius:20px;
+        border-bottom-left-radius:20px;
+        padding:120px;
+        padding-top:20px;
+        
+    }
+    .FPbox div:nth-child(2){
+        width:100%;
+        height:60%;
+    }
+    .FPbox p{
+        margin-top:30px;
+    }
+    .FPbox img:nth-child(n+2){
+        width:40%;
+        margin-left:30%;
+        margin-right:30%;
+    }
+}
+@media screen and (max-width:1060px){
+    .footer div:nth-child(1){
+        display:none;
+    }
+    .footer div:nth-child(2){
+        display:none;
+    }
+    .footer div:nth-child(4){
+        display:none;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width:888px){
+    .FPbox div:nth-child(1) button{
+        margin-top:80px;
+        
+    }
+    .FPbox div:nth-child(1) {
+        
+        padding:30px;
+    }
+}
+
+@media screen and (max-width:860px){
+    
+    .footer{
+        background-image:none;
+    }
+    figure{
+        width:80%;
+    }
+}
+@media screen and (max-width:700px){
+    nav{
+        display:none;
+    }
+    
+    .FPbox img:nth-child(n+2){
+        width:50%;
+        margin-left:25%;
+        margin-right:25%;
+    }
+}
+
+@media screen and (max-width:586px){
+    .FPbox div:nth-child(1){
+        width:100%;
+        height:50%;
+        padding:30px;
+    }
+    .FPbox div:nth-child(2){
+        width:100%;
+        height:50%;
+    }
+    .FPbox img:nth-child(n+2){
+        width:60%;
+        margin-left:20%;
+        margin-right:20%;
+        margin-top:50px;
+    }
+    .footer div:nth-child(n+1){
+        width:80%;
+        margin-left:10%;
+        margin-right:10%;
+    }
+    .footer{
+        height:1200px;
+    }
+    
+}
+@media screen and (max-width:500px){
+    .FPbox div:nth-child(1){
+        padding:30px;
+    }
+    
+    
+    @media screen and (max-width:375px){
+        .FPbox div:nth-child(1){
+            padding:30px;
+        }
